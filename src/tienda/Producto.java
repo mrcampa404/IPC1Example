@@ -10,14 +10,25 @@ package tienda;
  * @author Carlos
  */
 public class Producto {
-    private String nombre; 
-    private double precio; 
-    private int unidades; 
 
-    public Producto(String nombre, double precio, int unidades) {
+    private String nombre;
+    private double precio;
+    private int unidades;
+    private String imagen;
+
+    public String getImagen() {
+        return imagen;
+    }
+
+    public void setImagen(String imagen) {
+        this.imagen = imagen;
+    }
+
+    public Producto(String nombre, double precio, int unidades, String imagen) {
         this.nombre = nombre;
         this.precio = precio;
         this.unidades = unidades;
+        this.imagen = imagen;
     }
 
     public String getNombre() {
@@ -43,6 +54,5 @@ public class Producto {
     public void setUnidades(int unidades) {
         this.unidades = unidades;
     }
-    
-    
+
 }

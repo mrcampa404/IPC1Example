@@ -13,7 +13,6 @@ public class Informacion {
     private Cliente clientes[]; 
     private Producto productos[]; 
     
-
     public Informacion() {
         this.clientes = new Cliente[0]; 
         this.productos = new Producto[0]; 

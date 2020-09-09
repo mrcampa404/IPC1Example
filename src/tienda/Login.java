@@ -33,7 +33,7 @@ public class Login extends JFrame{
         //Titulo
         this.setTitle("Login"); 
         //Dimension y Posicion (x,y,x,y) 
-        this.setBounds(2000,100,500,500);
+        this.setBounds(500,100,500,500);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         
         JPanel panelUno = (JPanel) this.getContentPane(); 
@@ -73,8 +73,8 @@ public class Login extends JFrame{
         int i = 0; 
         while(miInfo.getClientes()[i]!=null && i < miInfo.getClientes().length){
             if(miInfo.getClientes()[i].getNickname().equals(name) && miInfo.getClientes()[i].getPassword().equals(pass)){
-                String nuevoNickname = JOptionPane.showInputDialog("Ingrese un nuevo Nickname");
-                miInfo.getClientes()[i].setNickname(nuevoNickname);  
+                //Creo una nueva ventana de productos; 
+                new VentanaProductos(miInfo).setVisible(true); 
                 return; 
             }
             i++; 

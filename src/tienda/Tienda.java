@@ -21,13 +21,14 @@ public class Tienda {
     public static void main(String[] args) {
         // TODO code application logic here
         Informacion informacion = cargarInformacion();
+        //new VentanaProductos(informacion).setVisible(true);
         Login miVentana = new Login(informacion);
         miVentana.setVisible(true);
-        int i = 0; 
+        /*int i = 0; 
         while (informacion.getClientes()[i] != null && i < informacion.getClientes().length) {
             System.out.println(informacion.getClientes()[i].getNickname()); 
             i++;
-        }
+        }*/
 
     }
 
@@ -46,13 +47,13 @@ public class Tienda {
             for (int i = 0; linea != null; i++) {
                 String[] contenidoLinea = linea.split(",");
                 if (contenidoLinea[0].equals("producto")) {
-                    productos[productoPos] = new Producto(contenidoLinea[1], Double.valueOf(contenidoLinea[2]), Integer.valueOf(contenidoLinea[3]));
+                    productos[productoPos] = new Producto(contenidoLinea[1], Double.valueOf(contenidoLinea[2]), Integer.valueOf(contenidoLinea[3]),contenidoLinea[4]);
                     productoPos++;
                 } else if (contenidoLinea[0].equals("cliente")) {
                     clientes[clientePos] = new Cliente(contenidoLinea[1], contenidoLinea[2]);
                     clientePos++;
                 } else {
-                    System.out.println("Linea Erronea" + contenidoLinea);
+                    System.out.println("Linea Erronea: " + contenidoLinea[0]);
                 }
                 linea = miBuffer.readLine();
             }
