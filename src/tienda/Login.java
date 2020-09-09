@@ -73,8 +73,8 @@ public class Login extends JFrame{
         int i = 0; 
         while(miInfo.getClientes()[i]!=null && i < miInfo.getClientes().length){
             if(miInfo.getClientes()[i].getNickname().equals(name) && miInfo.getClientes()[i].getPassword().equals(pass)){
-                String nuevoNickname = JOptionPane.showInputDialog("Ingrese un nuevo Nickname");
-                miInfo.getClientes()[i].setNickname(nuevoNickname);  
+                //Creo una nueva ventana de productos; 
+                new VentanaProductos(miInfo).setVisible(true); 
                 return; 
             }
             i++; 

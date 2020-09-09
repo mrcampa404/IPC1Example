@@ -1,10 +1,19 @@
 //Producto: producto,nombre,precio,unidades disponibles
 //Clientes: nickname, contraseña
-producto,impresora,34,84
-producto,lampara,100,36
-cliente,campa,admin1234
-cliente,jose,nuevo
-producto,discoduro,500,1
-
-
+producto,camara,34,84,productos/prod (1).jpg
+producto,cables,34,84,productos/prod (2).jpg
+producto,radio,34,84,productos/prod (3).jpg
+producto,bicicleta,34,84,productos/prod (4).jpg
+producto,caminata,34,84,productos/prod (5).jpg
+producto,navaja,34,84,productos/prod (6).jpg
+producto,snorkell,34,84,productos/prod (7).jpg
+producto,mochila,34,84,productos/prod (8).jpg
+producto,silvatos,34,84,productos/prod (9).jpg
+producto,pantufla,34,84,productos/prod (10).jpg
+producto,inflador,34,84,productos/prod (11).jpg
+producto,pelota,34,84,productos/prod (12).jpg
+producto,barreno,34,84,productos/prod (13).jpg
+producto,lampara,34,84,productos/prod (14).jpg
+producto,audifono,34,84,productos/prod (15).jpg
+cliente,admin,admin
 
