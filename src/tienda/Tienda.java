@@ -21,13 +21,9 @@ public class Tienda {
     public static void main(String[] args) {
         // TODO code application logic here
         Informacion informacion = cargarInformacion();
-        Login miVentana = new Login(informacion);
+        Graficas miVentana = new Graficas(informacion);
         miVentana.setVisible(true);
-        int i = 0; 
-        while (informacion.getClientes()[i] != null && i < informacion.getClientes().length) {
-            System.out.println(informacion.getClientes()[i].getNickname()); 
-            i++;
-        }
+        
 
     }
 

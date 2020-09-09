@@ -33,7 +33,7 @@ public class Login extends JFrame{
         //Titulo
         this.setTitle("Login"); 
         //Dimension y Posicion (x,y,x,y) 
-        this.setBounds(2000,100,500,500);
+        this.setBounds(500,100,500,500);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         
         JPanel panelUno = (JPanel) this.getContentPane(); 
