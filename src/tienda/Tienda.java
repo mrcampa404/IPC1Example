@@ -5,9 +5,13 @@
  */
 package tienda;
 
+import de.javasoft.plaf.synthetica.SyntheticaBlackStarLookAndFeel;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
+import javax.swing.JOptionPane;
+import javax.swing.LookAndFeel;
+import javax.swing.UIManager;
 
 /**
  *
@@ -20,14 +24,25 @@ public class Tienda {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        try{
+            //Agrego un objeto de tipo lookandfeel usando como instanciador un objeto de la clase 
+            //SyntheticaBlackStarLookAndFeel que esta en el jar agregado
+            LookAndFeel valor = new SyntheticaBlackStarLookAndFeel(); 
+            //Le digo al sistema que lo use ahora
+            UIManager.setLookAndFeel(valor); 
+        }catch(Exception ex){
+            JOptionPane.showMessageDialog(null,"Error en Look and feel","Error:" + ex.getMessage(), JOptionPane.ERROR_MESSAGE);
+        }
+        
+        
         Informacion informacion = cargarInformacion();
         Login miVentana = new Login(informacion);
         miVentana.setVisible(true);
-        int i = 0; 
+        /*int i = 0; 
         while (informacion.getClientes()[i] != null && i < informacion.getClientes().length) {
             System.out.println(informacion.getClientes()[i].getNickname()); 
             i++;
-        }
+        }*/ 
 
     }
 
