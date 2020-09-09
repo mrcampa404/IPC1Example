@@ -1,0 +1,10 @@
+//Producto: producto,nombre,precio,unidades disponibles
+//Clientes: nickname, contraseña
+producto,impresora,34,84
+producto,lampara,100,36
+cliente,campa,admin1234
+cliente,jose,nuevo
+producto,discoduro,500,1
+
+
+
