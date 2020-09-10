@@ -33,19 +33,9 @@ public class Tienda {
         }catch(Exception ex){
             JOptionPane.showMessageDialog(null,"Error en Look and feel","Error:" + ex.getMessage(), JOptionPane.ERROR_MESSAGE);
         }
-        
-        
         Informacion informacion = cargarInformacion();
-<<<<<<< HEAD
-        //new VentanaProductos(informacion).setVisible(true);
-        Login miVentana = new Login(informacion);
-        miVentana.setVisible(true);
-=======
         Graficas miVentana = new Graficas(informacion);
         miVentana.setVisible(true);
-        
->>>>>>> graficas
-
     }
 
     public static Informacion cargarInformacion() {

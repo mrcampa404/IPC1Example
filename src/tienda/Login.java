@@ -34,7 +34,7 @@ public class Login extends JFrame{
         this.setTitle("Login"); 
         //Dimension y Posicion (x,y,x,y) 
         this.setBounds(500,100,500,500);
-        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         
         JPanel panelUno = (JPanel) this.getContentPane(); 
         panelUno.setLayout(null); 
@@ -75,6 +75,7 @@ public class Login extends JFrame{
             if(miInfo.getClientes()[i].getNickname().equals(name) && miInfo.getClientes()[i].getPassword().equals(pass)){
                 //Creo una nueva ventana de productos; 
                 new VentanaProductos(miInfo).setVisible(true); 
+                this.dispose(); 
                 return; 
             }
             i++; 
