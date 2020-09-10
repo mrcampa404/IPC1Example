@@ -36,9 +36,15 @@ public class Tienda {
         
         
         Informacion informacion = cargarInformacion();
+<<<<<<< HEAD
         //new VentanaProductos(informacion).setVisible(true);
         Login miVentana = new Login(informacion);
         miVentana.setVisible(true);
+=======
+        Graficas miVentana = new Graficas(informacion);
+        miVentana.setVisible(true);
+        
+>>>>>>> graficas
 
     }
 
